@@ -606,6 +606,7 @@ def run_task_generate():
                 "ASSERTIONS=1",
                 "-s",
                 "ALLOW_MEMORY_GROWTH=1",
+                "--minify 0",
                 "-sMODULARIZE",
                 "-sEXPORT_NAME=PDFiumModule",
                 "-std=c++11",
@@ -630,6 +631,7 @@ def run_task_generate():
                 'EXPORTED_RUNTIME_METHODS=\'["ccall", "cwrap", "wasmExports", "addFunction", "removeFunction", "setValue", "HEAP8", "HEAP16", "HEAP32", "HEAPU8", "HEAPU16", "HEAPU32", "HEAPF32", "HEAPF64"]\'',
                 "-s",
                 "ALLOW_TABLE_GROWTH=1",
+                "--minify 0",
                 "-o",
                 os.path.join(gen_out_dir, "pdfium.esm.js"),
             ]
